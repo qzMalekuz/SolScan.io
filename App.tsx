@@ -12,6 +12,7 @@ import {
   Alert,
   Linking,
 } from "react-native";
+import { StatusBar } from "expo-status-bar";
 
 // ============================================
 // Solana RPC — just fetch()! Same as MERN.
@@ -222,8 +223,10 @@ export default function App() {
         )}
 
         <View style={{ height: 80 }} />
+        <StatusBar style="light"></StatusBar>
       </ScrollView>
     </SafeAreaView>
+    
   );
 }
 
